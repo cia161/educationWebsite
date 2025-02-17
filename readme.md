@@ -15,9 +15,9 @@ EDUCATIONWEBSITE/
 ```
 
 ## Page Assignments - need to decide
-- Home Page (index.html): [Developer Name]
-- About Page (about.html): [Developer Name]
-- Voting Page (voting.html): [Developer Name]
+- Home Page (index.html): 
+- About Page (about.html): 
+- Voting Page (voting.html): 
 - More Links (more.html): Celina Anwar
 
 ## Setting Up Your Work Environment
@@ -57,6 +57,13 @@ git pull origin main
 ### Saving Your Work
 After making changes:
 ```bash
+
+# Check you are in the correct branch 
+git branch 
+
+# Check what files you have changed (should only be your assigned page)
+git status 
+
 # Add your changes
 git add .
 
