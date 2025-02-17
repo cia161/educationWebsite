@@ -1,0 +1,24 @@
+<nav class="navbar">
+    <div class="logo">
+        <a href="/EDUCATIONWEBSITE/pages/index.html">
+            <img src="/EDUCATIONWEBSITE/assets/logo.jpg" alt="Fatima Ahmed Logo">
+        </a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="/EDUCATIONWEBSITE/pages/index.html">Home</a></li>
+        <li><a href="/EDUCATIONWEBSITE/pages/voting.html">Voting Information</a></li>
+        <li><a href="/EDUCATIONWEBSITE/pages/about.html">About Fatima</a></li>
+        <li><a href="/EDUCATIONWEBSITE/pages/more.html">More Links</a></li>
+    </ul>
+    <div class="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+<script>
+document.querySelector('.mobile-menu').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('active');
+});
+</script>

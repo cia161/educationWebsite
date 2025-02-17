@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Fatima Ahmed - Unit 4 School Board</title>
+    <!-- DO NOT REMOVE OR MODIFY THIS CSS LINK - Contains navigation styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- ADD YOUR PAGE-SPECIFIC CSS HERE - Between these style tags -->
+    <style>
+        /* Your custom CSS goes here
+           Example:
+           .my-custom-class {
+               color: blue;
+               font-size: 18px;
+           }
+        */
+    </style>
+</head>
+<body>
+    <!-- DO NOT MODIFY ANYTHING IN THE NAV SECTION BELOW -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../pages/index.html">
+                <img src="../assets/logo.jpg" alt="Fatima Ahmed Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../pages/index.html">Home</a></li>
+            <li><a href="../pages/voting.html">Voting Information</a></li>
+            <li><a href="../pages/about.html">About Fatima</a></li>
+            <li><a href="../pages/more.html">More Links</a></li>
+        </ul>
+        <div class="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ADD YOUR PAGE CONTENT HERE - Inside this content div -->
+        <div class="content">
+            <!-- Delete these example tags and add your own content
+                 Examples of content you can add:
+                 - <h1>Page Title</h1>
+                 - <p>Paragraphs of text</p>
+                 - <img src="path-to-image.jpg" alt="description">
+                 - <div class="your-custom-class">Custom sections</div>
+            -->
+            <h1>Home Page</h1>
+            <p>Test content to make sure the page loads.</p>
+        </div>
+    </main>
+
+    <!-- DO NOT MODIFY THIS SCRIPT - Controls mobile menu -->
+    <script>
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
