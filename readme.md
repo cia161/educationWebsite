@@ -37,6 +37,10 @@ git checkout -b index    # if working on home page
 git checkout -b more     # if working on more links page
 ```
 
+#### Make sure to push your branch (only do this the first time you create it)
+```bash
+git push -u origin [branchname]
+```
 ### Every Time You Work
 1. Make sure you're on your branch:
 ```bash
