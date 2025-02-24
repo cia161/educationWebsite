@@ -9,13 +9,98 @@
 
     <!-- ADD YOUR PAGE-SPECIFIC CSS HERE - Between these style tags -->
     <style>
-        /* Your custom CSS goes here
-           Example:
-           .my-custom-class {
-               color: blue;
-               font-size: 18px;
-           }
+        /* 
+        Your custom CSS goes here
+        Example:
+        .my-custom-class {
+        color: blue;
+        font-size: 18px;
+        }
         */
+
+        /* ===== CARD CONTAINER STYLES ===== */
+        /* Controls the overall layout and spacing of the cards section */
+        .container {
+            width: 100%;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+        /* Creates a vertical stack of cards */
+        .card-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        /* ===== INDIVIDUAL CARD STYLES ===== */
+        /* Base card styling with brand colors */
+        .card {
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+            width: 100%;
+            border: 2px solid #003366; /* Matches brand dark blue */
+        }
+
+        /* Hover animation for cards */
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        /* Card image styling */
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Card content area styling */
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        /* Card title styling using brand colors */
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 0 0.5rem 0;
+            color: #003366; /* Brand dark blue */
+        }
+
+        /* Card preview text styling */
+        .card-preview {
+            color: #4a5568;
+            margin: 0 0 1rem 0;
+            line-height: 1.5;
+        }
+
+        /* Card link wrapper styling */
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        /* Hover effect for card titles using brand orange */
+        .card:hover .card-title {
+            color: #FF6B00; /* Brand orange */
+        }
+
+        /* ===== RESPONSIVE DESIGN STYLES ===== */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0.5rem;
+            }
+            
+            .card-content {
+                padding: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -40,17 +125,46 @@
     </nav>
 
     <main>
-        <!-- ADD YOUR PAGE CONTENT HERE - Inside this content div -->
         <div class="content">
-            <!-- Delete these example tags and add your own content
-                 Examples of content you can add:
-                 - <h1>Page Title</h1>
-                 - <p>Paragraphs of text</p>
-                 - <img src="path-to-image.jpg" alt="description">
-                 - <div class="your-custom-class">Custom sections</div>
-            -->
-            <h1>More Links Page</h1>
-            <p>Test content to make sure the page loads.</p>
+            <!-- Page Title -->
+            <h1>More Links</h1>
+            <!-- Card Container Section -->
+            <div class="container">
+                <div class="card-grid">
+                    <!-- Link Card 1 -->
+                    <a href="#" class="card-link">
+                        <div class="card">
+                            <img src="/api/placeholder/400/320" alt="placeholder" class="card-image">
+                            <div class="card-content">
+                                <h2 class="card-title">Important Resource Link 1</h2>
+                                <p class="card-preview">Click here to access essential information about educational policies and community initiatives in our district.</p>
+                            </div>
+                        </div>
+                    </a>
+        
+                    <!-- Link Card 2 -->
+                    <a href="#" class="card-link">
+                        <div class="card">
+                            <img src="/api/placeholder/400/320" alt="placeholder" class="card-image">
+                            <div class="card-content">
+                                <h2 class="card-title">Community Resource Link 2</h2>
+                                <p class="card-preview">Find out more about upcoming community events and how you can get involved in local education initiatives.</p>
+                            </div>
+                        </div>
+                    </a>
+        
+                    <!-- Link Card 3 -->
+                    <a href="#" class="card-link">
+                        <div class="card">
+                            <img src="/api/placeholder/400/320" alt="placeholder" class="card-image">
+                            <div class="card-content">
+                                <h2 class="card-title">Educational Resource Link 3</h2>
+                                <p class="card-preview">Discover valuable resources and information about our school district's programs and opportunities.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </main>
 
