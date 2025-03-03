@@ -45,6 +45,9 @@
             transition: transform 0.2s ease-in-out;
             width: 100%;
             border: 2px solid #003366; /* Matches brand dark blue */
+            display: flex;
+            align-items: center;
+            padding: 1.5rem;
         }
 
         /* Hover animation for cards */
@@ -52,16 +55,19 @@
             transform: translateY(-4px);
         }
 
-        /* Card image styling */
-        .card-image {
-            width: 100%;
-            height: 200px;
+        /* Card image styling - now as an icon */
+        .card-icon {
+            width: 70px;
+            height: 70px;
+            /* border-radius: 50%; */
             object-fit: cover;
+            margin-right: 1.5rem;
+            flex-shrink: 0;
         }
 
         /* Card content area styling */
         .card-content {
-            padding: 1.5rem;
+            flex: 1;
         }
 
         /* Card title styling using brand colors */
@@ -75,7 +81,7 @@
         /* Card preview text styling */
         .card-preview {
             color: #4a5568;
-            margin: 0 0 1rem 0;
+            margin: 0;
             line-height: 1.5;
         }
 
@@ -97,8 +103,18 @@
                 padding: 0.5rem;
             }
             
-            .card-content {
+            .card {
                 padding: 1rem;
+            }
+            
+            .card-icon {
+                width: 40px;
+                height: 40px;
+                margin-right: 1rem;
+            }
+            
+            .card-title {
+                font-size: 1.2rem;
             }
         }
     </style>
@@ -131,24 +147,24 @@
             <!-- Card Container Section -->
             <div class="container">
                 <div class="card-grid">
-                    <!-- Link Card 1 -->
-                    <a href="#" class="card-link">
+                    <!-- Link Card 1 - News Gazette Interview -->
+                    <a href="https://www.news-gazette.com/news/your-questions-their-answers-fatima-ahmed-champaign-school-board-candidate/article_8c3776c0-d471-11ef-9cb2-279cd73894c8.html" class="card-link" target="_blank">
                         <div class="card">
-                            <img src="/api/placeholder/400/320" alt="placeholder" class="card-image">
+                            <img src="../assets/newsicon.jpeg" alt="News Gazette Interview" class="card-icon">
                             <div class="card-content">
-                                <h2 class="card-title">Important Resource Link 1</h2>
-                                <p class="card-preview">Click here to access essential information about educational policies and community initiatives in our district.</p>
+                                <h2 class="card-title">News Gazette Interview</h2>
+                                <p class="card-preview">Read Fatima Ahmed's interview with the News Gazette about her candidacy for the Champaign School Board and her vision for our district.</p>
                             </div>
                         </div>
                     </a>
         
-                    <!-- Link Card 2 -->
-                    <a href="#" class="card-link">
+                    <!-- Link Card 2 - Facebook -->
+                    <a href="https://www.facebook.com/people/Fatima-Ahmed-U4SD-School-Board-Candidate/61570848219697/" class="card-link" target="_blank">
                         <div class="card">
-                            <img src="/api/placeholder/400/320" alt="placeholder" class="card-image">
+                            <img src="../assets/facebookicon.png" alt="Fatima Ahmed Facebook Page" class="card-icon">
                             <div class="card-content">
-                                <h2 class="card-title">Community Resource Link 2</h2>
-                                <p class="card-preview">Find out more about upcoming community events and how you can get involved in local education initiatives.</p>
+                                <h2 class="card-title">Fatima Ahmed on Facebook</h2>
+                                <p class="card-preview">Follow Fatima's campaign on Facebook to stay updated with the latest news, events, and community engagement opportunities.</p>
                             </div>
                         </div>
                     </a>
@@ -156,9 +172,9 @@
                     <!-- Link Card 3 -->
                     <a href="#" class="card-link">
                         <div class="card">
-                            <img src="/api/placeholder/400/320" alt="placeholder" class="card-image">
+                            <img src="/api/placeholder/400/320" alt="placeholder" class="card-icon">
                             <div class="card-content">
-                                <h2 class="card-title">Educational Resource Link 3</h2>
+                                <h2 class="card-title">Educational Resource Link</h2>
                                 <p class="card-preview">Discover valuable resources and information about our school district's programs and opportunities.</p>
                             </div>
                         </div>
