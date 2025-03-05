@@ -16,6 +16,43 @@
                font-size: 18px;
            }
         */
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            line-height: 1.5;
+        }
+
+        h1, h2 {
+            text-align: left;
+            margin-left: 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .content h2 {
+            margin-left: 20px;
+        }
+
+        /* Hover effect for links */
+        a {
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #FF6B00; /* Brand orange */
+            text-decoration: underline;
+        }
+        .vote-image {
+            float: right;
+            max-width: 100%;
+            height: auto;
+            flex-shrink: 0;
+        }
+
+        
     </style>
 </head>
 <body>
@@ -49,8 +86,26 @@
                  - <img src="path-to-image.jpg" alt="description">
                  - <div class="your-custom-class">Custom sections</div>
             -->
-            <h1>Voting Page</h1>
-            <p>Zainab is working on this page!</p>
+            <h1>How to Vote</h1>
+            <div class="vote-section">
+                <img src="../assets/vote-icon.png" alt="Voting Icon" class="vote-image"> <!-- displays weirdly on samsung galaxy s8+, galaxy z fold 5, works decently well for responsiveness -->
+                <ul>
+                    <li>The Consolidated Municipal Election is April 1. </li>
+                    <li>In-person early voting begins March 12 at the Brookens Center and opens at county-wide locations on March 24.</li>
+                    <li>The Champaign County Clerk’s Office will begin mailing ballots to those who have registered to receive mail ballots on March 12.</li>
+                </ul>
+                <p>For more information, visit the <a href="https://champaigncountyclerk.com/elections/many-ways-vote/early-voting-information">Champaign County Clerk’s website</a>.</p>
+            </div>
+
+            <h1>Why Your Vote Matters</h1>
+            <div class="vote-section">
+                <ul>
+                    <li><strong>Education Quality:</strong> School board members make critical decisions about curriculum, funding, and policies that shape students’ educational experiences.</li>
+                    <li><strong>Resource Allocation:</strong> The board oversees the district’s budget, ensuring resources benefit students and staff effectively.</li>
+                    <li><strong>Community Representation:</strong> A diverse and representative school board ensures that all voices in the community are heard.</li>
+                </ul>
+            </div>
+            
         </div>
     </main>
 
