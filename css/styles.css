@@ -99,3 +99,42 @@ body {
     color: rgb(241, 96, 43); /* Your orange */
     font-weight: 600;
 }
+
+/* Experiences section with side image */
+.experiences-section {
+    display: flex;
+    gap: 2rem;
+    align-items: start;
+    margin-bottom: 2rem;
+}
+
+.experiences-section .side-image {
+    flex: 0 0 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.experiences-section .card {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+/* Responsive adjustments for experiences section */
+@media (max-width: 768px) {
+    .experiences-section {
+        flex-direction: column;
+    }
+    
+    .experiences-section .side-image {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Remove old experiences card styles */
+.experiences-card,
+.card-image,
+.card-side-image {
+    /* These classes are no longer needed */
+}
