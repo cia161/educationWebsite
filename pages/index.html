@@ -9,6 +9,11 @@
 
     <!-- ADD YOUR PAGE-SPECIFIC CSS HERE - Between these style tags -->
     <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
         .head {
             text-align: center;
@@ -19,25 +24,28 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 160px; 
+            gap: 5vw;
+            flex-wrap: wrap;
+            padding: 20px;
         }
 
         .headshot {
-            height: 420px; 
-            width: auto;
+            height: auto; 
+            width: 100%;
+            max-width: 320px;
             border-radius: 10%;
         }
 
         .side-img {
-            height: 200px; 
-            width: auto; 
+            height: auto;
+            width: 100%;
+            max-width: 300px;
             border-radius: 25%;
-            
         }
 
 
         .head h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight:600;
             line-height: 0.7;
         }
@@ -49,11 +57,13 @@
         }
 
         .vision p {
-            font-size:1.7rem;
-            font-weight:300;
-            text-align:justify;
-            padding-left:200px;
-            padding-right:200px;
+            font-size: 1.7rem;
+            font-weight: 300;
+            text-align: center;
+            padding-left: 5%;
+            padding-right: 5%;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         main {
@@ -73,14 +83,16 @@
         .three-priorities {
             display: flex;
             justify-content: center;
-            gap: 65px;
+            gap: 20px;
             padding: 20px;
-            align-items: flex-start; 
+            align-items: flex-start;
+            flex-wrap: wrap;
         }
 
         .priority {
             text-align: center;
             flex: 1;
+            min-width: 280px;
             max-width: 400px;
             display: flex;
             flex-direction: column;
@@ -103,7 +115,48 @@
             font-weight: 300;
         }
 
+        @media screen and (max-width: 768px) {
+            .head h1 {
+                font-size: 2rem;
+                line-height: 1;
+            }
 
+            .vision h2, .priorities h2 {
+                font-size: 2rem;
+            }
+
+            .vision p {
+                font-size: 1.2rem;
+            }
+
+            .priority h5 {
+                font-size: 1.5rem;
+            }
+
+            .priority p {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .head h1 {
+                font-size: 1.5rem;
+                line-height: 1;
+            }
+
+            .head {
+                padding: 30px;
+            }
+
+            .vision p {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .priority {
+                min-width: 250px;
+            }
+        }
 
     </style>
 </head>
@@ -137,9 +190,11 @@
                 <img src="../assets/Champaign.JPG" alt="Chapaign School District" class="side-img">
             </div>
             <div style="height: 45px;"></div>
+            <div class="head-text">
             <h1>Vote for Fatima Ahmed for Champaign<br><br>
                 School District Board (Unit 4)<br><br>
                 April 1, 2025</h1>
+            </div>
         </div>
 
         <div class="vision">

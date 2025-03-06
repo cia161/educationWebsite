@@ -6,8 +6,10 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    
+    font-family: 'Arial', sans-serif;
+    color: #333333;  /* Dark gray that's easier on the eyes than pure black */
+    margin: 0;
+    padding: 0;
 }
 
 /* Navigation styles */
